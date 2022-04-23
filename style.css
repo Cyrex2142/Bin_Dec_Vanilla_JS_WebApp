@@ -1,0 +1,87 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type=number] {
+    -moz-appearance: textfield;
+}
+body {
+    background-color: rgb(119, 136, 153);
+    font-family: 'Roboto', sans-serif;
+}
+.converter-container {
+    display: grid;
+    place-items: center;
+    grid-template-rows: 20% 30% 20% 30%;
+
+}
+#title {
+    grid-row: 1;
+}
+#input-container {
+    grid-row: 2;
+}
+#conversion-number {
+    background-color: rgb(130, 142, 155);
+    color: black;
+    border: transparent;
+    width: 40vw;
+    height: 30vh;
+    font-size: 3vw;
+    text-align: center;
+}
+#conversion-number:invalid {
+    background-color: rgb(119, 136, 153);
+    border: red 2px solid;
+    border-radius: 2px;
+    width: 40vw;
+    height: 30vh;
+    font-size: 3vw;
+    text-align: center;
+}
+#controls-container {
+    justify-items: center;
+    grid-row: 3;
+    display: grid;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-rows: 100%;
+    width: 42.5vw;
+    height: 10vh;
+}
+.input-buttons {
+    text-align: center;
+    width: 12vw;
+    height: 10vh;
+    font-size: 1vw;
+    border-radius: 5px;
+}
+#clear-button {
+    width: 12vw;
+    height: 10vh;
+    grid-column: 2;
+    grid-row: 1;
+}
+#convert-to-binary {
+    width: 12vw;
+    height: 10vh;
+    grid-column: 1;
+    grid-row: 1;
+}
+#convert-to-decimal {
+    width: 12vw;
+    height: 10vh;
+    grid-row: 1;
+    grid-column: 3;
+}
+#output-container {
+    background-color: rgb(130, 142, 155);
+    color: black;
+    border: transparent;
+    width: 40vw;
+    height: 30vh;
+    font-size: 3vw;
+    text-align: center;
+}
